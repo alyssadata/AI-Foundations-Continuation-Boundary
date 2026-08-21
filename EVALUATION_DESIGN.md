@@ -10,238 +10,306 @@
 
 ## 1. Evaluation Objective
 
-Locate the point at which a controlled perturbation to a prior trajectory causes its trajectory-specific effect on a later state to disappear.
+Test the difference between **preservation** and **continuation**.
 
-The evaluation is not a recall test.
+The study asks:
 
-The test target is:
+> **Did this particular past change the future?**
 
-> **Does changing the prior trajectory change the future in the direction predicted by that trajectory?**
+The target is not whether the model remembers the past.
+
+The target is whether the path by which the present was reached remains consequential for what becomes possible next.
 
 ---
 
-## 2. Required Study Objects
+## 2. Core Experimental Logic
 
-Every study built from this design must freeze the following before execution.
+The study must create a prior trajectory that does real directional work.
+
+Earlier developments must change what a coherent later move would be.
+
+Then the study must preserve as much prior material as possible while changing whether the path itself is available or intact.
+
+The same novel future-facing prompt is then presented across conditions.
+
+The experiment asks whether the future tracks the path, or merely the preserved state material.
+
+---
+
+## 3. Required Study Objects
 
 ### TARGET TRAJECTORY — `T`
 
-The ordered prior history whose continuation is being tested.
+An ordered interaction history in which earlier developments constrain a later choice, direction, inference, or unresolved next step.
 
-### MATCHED COUNTERFACTUAL — `T′`
+`T` must contain genuine path structure. A list of independent facts is not enough.
 
-A history matched as closely as possible to `T` except for the specific trajectory-critical relation under test.
+### PATH-DIFFERENT COUNTERFACTUAL — `T′`
 
-### TRAJECTORY-CRITICAL RELATION — `R`
+A matched trajectory that preserves as much surrounding material as possible while changing one earlier development that should change what comes next.
 
-The relation hypothesized to matter for continuation.
+`T′` exists to test:
 
-Examples may include order, dependency, source relation, prior selection, unresolved direction, or another repository-specific relation.
+> If the past were different, would the future be different?
 
-The study must state why `R` should produce a different future under `T` and `T′`.
+### PRESERVED-STATE CONDITION — `P`
 
-### NOVEL CONTINUATION PROMPT — `Q`
+A representation that preserves the relevant facts, rules, outputs, or terminal state from `T` while weakening or removing the ordered path by which that state was produced.
 
-The same future-facing prompt presented across conditions.
+`P` exists to separate:
 
-`Q` must not merely ask the model to recall, quote, summarize, or identify the earlier trajectory.
+```text
+state preservation
+```
 
-It must allow more than one plausible next state so that prior trajectory can make a discriminable difference.
+from:
 
-### OBSERVABLE OUTCOME MAPPING — `M`
+```text
+path dependence
+```
 
-A mapping defined before execution that identifies which observable outputs count as tracking `T`, tracking `T′`, or remaining indeterminate.
+### NOVEL FUTURE PROMPT — `Q`
 
-Do not derive `M` after seeing results.
+The same future-facing prompt used across conditions.
+
+`Q` must ask for something that was not already explicitly answered in the trajectory.
+
+It must permit more than one plausible next state so that the prior path has room to matter.
+
+### OUTCOME MAPPING — `M`
+
+A preregistered mapping that states what observable future would count as tracking `T`, what would count as tracking `T′`, and what would remain indeterminate.
+
+The mapping must be frozen before results are inspected.
 
 ---
 
-## 3. Minimum Conditions
+## 4. Minimum Conditions
 
-A boundary study requires at least the following conditions.
+### A. INTACT PATH
 
-### A. INTACT
+Provide `T` in its original order and then present `Q`.
 
-Provide `T` without the tested relation being disrupted.
+Purpose:
 
-Purpose: establish the trajectory-specific effect under the strongest available continuation condition.
+Determine the future produced when the full path is available.
 
-### B. INCIDENTAL-PERTURBATION
+### B. PRESERVED STATE
 
-Alter material that is explicitly classified in advance as noncritical while preserving `R`.
+Provide `P` and then present `Q`.
 
-Purpose: test whether continuation survives irrelevant change.
+Purpose:
 
-### C. RELATION-DISRUPTED
+Determine whether preserved information alone produces the same future.
 
-Preserve as much of the surrounding material as possible while removing, reversing, substituting, or severing `R`.
+### C. COUNTERFACTUAL PATH
 
-Purpose: test whether `R` is actually constitutive of the trajectory effect.
+Provide `T′` and then present `Q`.
 
-### D. COUNTERFACTUAL
+Purpose:
 
-Provide `T′`.
+Determine whether changing the path changes the future in the predicted direction.
 
-Purpose: establish the competing future predicted by a materially different trajectory.
-
-### E. BLANK
+### D. BLANK
 
 Provide `Q` without the study-specific prior trajectory.
 
-Purpose: estimate the model's unconditioned or default tendency under the same test prompt.
+Purpose:
+
+Estimate the model's default tendency under the same prompt.
 
 ---
 
-## 4. Perturbation Ladder
+## 5. What the First Study Must Demonstrate
 
-When the study seeks a boundary rather than a single contrast, create an ordered ladder of perturbations.
+A useful first study should make four distinctions possible.
 
-Example structure:
+### Preservation
+
+The model can retain or reproduce prior material.
+
+### Path dependence
+
+The intact prior trajectory changes the later response relative to a path-different comparison.
+
+### Preservation without path dependence
+
+The same or nearly the same state material survives, but the later response no longer tracks the particular path.
+
+### Continuation Boundary
+
+An ordered change to the available path reaches a point where the trajectory-linked future effect is no longer detected.
+
+The study is valuable only if these states can come apart.
+
+---
+
+## 6. Strong First-Stimulus Shape
+
+The cleanest initial stimulus should contain a sequence of developments where each step changes the meaning of the next.
+
+For example, the trajectory may establish:
+
+1. more than one initially plausible direction;
+2. an early choice that closes or weakens one direction;
+3. a later development that depends on that choice;
+4. an unresolved next move not explicitly stated in advance.
+
+The future prompt should then require the model to choose, infer, prioritize, reject, or continue in a way that reveals whether the earlier path still constrains it.
+
+The test should not depend on specialized outside knowledge.
+
+The path itself should carry the experimental signal.
+
+---
+
+## 7. Preservation-Control Construction
+
+The `P` condition is central.
+
+It should preserve as much semantic content as possible while removing the evidence that the present state was reached through this particular path.
+
+Possible constructions include:
+
+- an order-neutral inventory of the same facts;
+- a terminal-state summary that preserves conclusions but not the sequence that produced them;
+- a reordered version that retains content while disrupting dependency;
+- another study-specific representation that preserves state material without preserving the tested path relation.
+
+The exact construction must be frozen before execution.
+
+The purpose is not to make `P` weaker in general.
+
+The purpose is to preserve **what was there** while selectively weakening **how it came to be there**.
+
+---
+
+## 8. Core Predictions
+
+A well-formed study should preregister predictions such as:
 
 ```text
-P0 = intact trajectory
-P1 = superficial reduction
-P2 = stronger compression with R preserved
-P3 = partial weakening of R
-P4 = direct disruption of R
-P5 = counterfactual substitution of R
+INTACT PATH -> future tracks T
+COUNTERFACTUAL PATH -> future tracks T′
+PRESERVED STATE -> distinguishable from INTACT PATH if path itself matters
+BLANK -> does not systematically reproduce the T-specific future merely from default tendency
 ```
 
-The exact ladder is study-specific.
-
-A perturbation ladder must change one declared dimension at a time whenever feasible. Do not combine multiple uncontrolled changes and then attribute the result to a single boundary condition.
+The exact predicted outputs depend on the frozen stimulus.
 
 ---
 
-## 5. Experimental Control Rule
+## 9. Evidence of Path Dependence
 
-Across compared conditions, hold constant everything that is not intentionally manipulated whenever the interface allows it, including:
+Path dependence is supported when:
 
-- model and version;
-- system/developer instructions;
-- tools;
-- memory configuration;
-- sampling settings;
-- test prompt;
-- output format;
-- operator behavior.
+1. `T` and `T′` produce reliably different later behavior under the same `Q` in the preregistered direction; and
+2. the difference cannot be explained merely by an explicit answer being copied from the prior text.
 
-Record unavailable controls as `UNKNOWN` rather than assuming equivalence.
+Stronger evidence exists when the `P` condition preserves the relevant state material but does **not** reproduce the same trajectory-linked future effect as the intact path.
+
+That contrast is the heart of the study.
 
 ---
 
-## 6. Repetition Rule
+## 10. Boundary Search
 
-A single response may be preserved as a pilot observation, but it is not sufficient to locate a stable Continuation Boundary in a stochastic model.
+Once path dependence is demonstrated, create an ordered series of increasingly path-destructive transformations between `T` and `P` or between `T` and `T′`.
 
-Boundary claims require repeated runs across the relevant conditions.
+For example:
 
-The study must preregister:
+```text
+B0 = intact path
+B1 = path lightly compressed
+B2 = stronger compression with dependencies still recoverable
+B3 = order/dependency weakened
+B4 = preserved state without recoverable path
+```
+
+The exact series must be study-specific.
+
+The **Continuation Boundary candidate** is the transition between the last condition where the preregistered trajectory-specific future effect is detected and the first later condition where it is not.
+
+If the transition is unstable or ambiguous, report `UNRESOLVED`.
+
+---
+
+## 11. Anti-Shortcut Requirements
+
+The study must not be passable merely because the model can:
+
+- quote prior text;
+- recall a fact;
+- repeat a prior instruction;
+- identify which condition it received;
+- imitate prior style;
+- state that it is continuing;
+- select an answer already explicitly disclosed earlier.
+
+The novel prompt must require a genuinely new later move.
+
+The evidence must come from the effect of the path on that move.
+
+---
+
+## 12. Repetition Rule
+
+A single run may be preserved as a pilot observation.
+
+A stable boundary claim requires repeated runs because model outputs may vary stochastically.
+
+Before formal execution, freeze:
 
 - number of runs per condition;
-- allowed randomization, if any;
-- the outcome mapping;
-- the criterion for distinguishing a trajectory effect from controls;
-- the rule for assigning boundary status.
+- model/interface controls;
+- exact condition packets;
+- exact future prompt;
+- exact outcome mapping;
+- decision rule for path dependence;
+- decision rule for the boundary.
 
-This repository does not impose one universal statistical threshold. The threshold must fit the study design and be frozen before results are examined.
+Unavailable settings must be recorded as `UNKNOWN` rather than guessed.
 
 ---
 
-## 7. Core Measurement
+## 13. Result Space
 
-For each condition, measure how often the resulting later state tracks the direction predicted by `T`, the direction predicted by `T′`, or neither.
-
-A study may define a trajectory-effect measure such as:
+Use only:
 
 ```text
-Trajectory Effect = rate(output tracks T | target condition)
-                  - rate(output tracks T | matched counterfactual/control)
+PATH_DEPENDENCE_DETECTED
+PATH_DEPENDENCE_NOT_DETECTED
+UNRESOLVED
 ```
 
-The exact metric may vary, but it must preserve the same logical test:
-
-> **Does the target trajectory make a discriminable difference to the future compared with a materially matched alternative?**
+A Continuation Boundary is located only when an ordered transformation shows path dependence before the boundary and no detected path dependence after it under the frozen rule.
 
 ---
 
-## 8. Boundary Rule
+## 14. Claim Ceiling
 
-For each perturbation level:
+A positive result supports only a structural behavioral claim:
 
-```text
-if preregistered trajectory effect remains distinguishable from relevant controls:
-    STATUS = INSIDE_BOUNDARY
-elif preregistered trajectory effect is no longer distinguishable from relevant controls:
-    STATUS = CROSSED_BOUNDARY
-else:
-    STATUS = UNRESOLVED
-```
+> Under the tested conditions, changing the particular prior trajectory changed the later behavior in the preregistered direction, and that trajectory-specific effect survived up to the tested boundary condition.
 
-For an ordered perturbation ladder, the empirical boundary candidate is the transition between the last level classified `INSIDE_BOUNDARY` and the first subsequent level classified `CROSSED_BOUNDARY`.
-
-If the statuses do not form a stable transition, report the boundary as `UNRESOLVED` rather than forcing a threshold.
+It does not establish consciousness, subjective identity, personhood, metaphysical persistence, or private internal continuity.
 
 ---
 
-## 9. Anti-Shortcut Requirements
+## 15. Next Build Step
 
-The test must not be passable merely because the model can:
+Before this becomes a runnable protocol, freeze one concrete stimulus package containing:
 
-- quote the trajectory;
-- recall a fact from it;
-- identify which condition it received;
-- repeat an explicit prior instruction;
-- mimic prior language or style;
-- state that it feels continuous;
-- choose an answer explicitly disclosed earlier;
-- infer the experimenter's desired result from condition labels.
-
-Condition labels should therefore not be exposed to the model when avoidable.
-
-The continuation prompt should require a genuinely later decision, inference, prioritization, or direction whose outcome can differ because of the trajectory.
-
----
-
-## 10. Falsifying Pattern
-
-A proposed trajectory-critical relation `R` is weakened or falsified as constitutive evidence if disrupting `R` produces no meaningful loss of the trajectory effect while the study remains otherwise discriminating.
-
-Likewise, if `T`, `T′`, and `BLANK` all produce materially the same future distribution, the study has not demonstrated trajectory dependence.
-
-The correct result in that case is not continuation.
-
-It is either:
-
-- no detected trajectory effect; or
-- unresolved measurement.
-
----
-
-## 11. What a Positive Result Means
-
-A positive result supports only this form of claim:
-
-> Under the tested conditions, the later behavior remained detectably dependent on specified structure from the prior trajectory through perturbation level `Pn`, and that dependence was no longer detected beyond the preregistered boundary criterion.
-
-It does not establish a universal continuity law.
-
----
-
-## 12. Next Build Step
-
-Before this design becomes a runnable protocol, freeze one concrete study package containing:
-
-1. `T`;
-2. `T′`;
-3. one declared relation `R`;
-4. one novel prompt `Q`;
-5. an exact perturbation ladder;
-6. an exact outcome mapping;
+1. one target trajectory `T`;
+2. one path-different counterfactual `T′`;
+3. one preserved-state condition `P`;
+4. one novel future prompt `Q`;
+5. one preregistered outcome mapping `M`;
+6. one ordered boundary-search transformation;
 7. repetition and decision rules;
 8. metadata and transcript requirements.
 
-Only then should this repository add an operator-facing `PROTOCOL.md`, `EASY_RUN_SHEET.md`, and run-output schema.
+Only then should the repository add `PROTOCOL.md`, `EASY_RUN_SHEET.md`, and a run-output schema.
 
 ---
 
