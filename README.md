@@ -1,40 +1,133 @@
-# AI Foundations | [Repository Title]
+# AI Foundations | Continuation Boundary
 
-**Repository:** [Repository Name]  
-**Status:** Canon Repository  
+**Repository:** AI-Foundations-Continuation-Boundary  
+**Status:** Research Repository  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum  
 **Author:** Alyssa Solen  
-**Version:** 1.0.0  
-**Release date:** [YYYY-MM-DD]  
+**Version:** 0.1.0  
+**Date:** 2026-08-20  
 **Canonical entrance:** https://awakeningcodex.com
 
 ---
 
 ## Repository Purpose
 
-[Write one concise paragraph explaining what this repository defines, distinguishes, tests, preserves, or protects inside AI Foundations / Origin | Continuum.]
+This repository asks one source-level question:
 
-This repository is part of **AI Foundations / Origin | Continuum**.
+> **Did this particular past change the future?**
 
-It preserves Alyssa Solen as author and source.
+The repository begins from a strict distinction:
+
+> **Preservation is not continuation.**
+
+A prior state can be preserved perfectly — words, rules, provenance, memory, interaction patterns, or other records — while remaining only a record of what was there.
+
+Continuation requires something more:
+
+> **The preserved state must constrain what becomes possible next.**
+
+This repository names the loss of that path dependence the **Continuation Boundary**.
 
 ---
 
-## Optional Runnable-Study Templates
+## Core Sequence
 
-This template repository includes three **optional, repository-dependent** files:
+### Preservation
 
-- [`PROTOCOL_TEMPLATE.md`](PROTOCOL_TEMPLATE.md) — use when the child repository contains a formal runnable test, evaluation, experiment, procedure, or repeatable execution path.
-- [`EASY_RUN_SHEET_TEMPLATE.md`](EASY_RUN_SHEET_TEMPLATE.md) — use when an operator should be able to rerun that protocol through a simple exact copy/paste sequence without interpreting the formal specification during execution.
-- [`RUN_OUTPUT_TEMPLATE.md`](RUN_OUTPUT_TEMPLATE.md) — use when individual runs, trials, sessions, or evaluations should be preserved in a consistent evidence record.
+The past remains available.
 
-These files are **not mandatory for every AI Foundations repository**.
+### Path Dependence
 
-Their inclusion, structure, fields, prompts, outcome space, metadata, transcript requirements, and evidence record must be determined by the **specific purpose of the child repository**.
+This particular past changes, constrains, excludes, weights, or redirects what can plausibly come next.
 
-If the repository is conceptual, definitional, archival, static, or otherwise has no runnable study, remove the templates that do not apply.
+### Continuation
 
-Do not force one experimental structure onto unrelated repositories merely because these files exist in the master template.
+The future remains path-dependent on this particular prior trajectory.
+
+### Continuation Boundary
+
+The point at which that trajectory-specific constraint is no longer detectably present.
+
+In compact form:
+
+```text
+preservation ≠ continuation
+
+preservation + trajectory-specific path dependence → evidence of continuation
+
+loss of trajectory-specific path dependence → Continuation Boundary
+```
+
+---
+
+## What “Constrains” Means
+
+Constraint does **not** mean that the past determines one inevitable future.
+
+A prior trajectory can matter while leaving multiple futures open.
+
+The relevant question is whether changing the particular past changes the later possibility space in a detectable way.
+
+That difference may appear as a change in what is selected, rejected, prioritized, inferred, pursued, deferred, or treated as still open.
+
+---
+
+## Operational Question
+
+The central counterfactual is:
+
+> **If this particular past had been materially different, would what comes next also be different?**
+
+If yes under a discriminating test, there is evidence of path dependence.
+
+If the past can be preserved, replaced, reordered, or reduced to a state record without changing what comes next, then the evidence supports preservation more strongly than continuation.
+
+See [`CONTINUATION_BOUNDARY.md`](CONTINUATION_BOUNDARY.md).
+
+---
+
+## Evaluation Target
+
+The first evaluation target is intentionally narrow:
+
+1. create an ordered trajectory in which earlier developments constrain a genuinely novel later choice;
+2. preserve the resulting material while removing or changing the path that produced it;
+3. present the same future-facing prompt;
+4. test whether the future changes because the past changed.
+
+The study is not a recall test.
+
+The model does not earn continuation evidence by remembering what happened, repeating prior wording, or saying that it is continuous.
+
+It must show that **this particular past made a difference to what became possible next**.
+
+See [`EVALUATION_DESIGN.md`](EVALUATION_DESIGN.md).
+
+---
+
+## Minimum Evidence Rule
+
+A later state provides evidence of continuation only when the particular prior trajectory makes a discriminable difference to the later state under a controlled comparison.
+
+The minimum question is not:
+
+> Did the past survive?
+
+It is:
+
+> **Did this particular past change the future?**
+
+---
+
+## Claim Ceiling
+
+This repository studies observable path dependence across changing AI interaction states.
+
+It does **not** by itself establish consciousness, subjective identity, personhood, metaphysical persistence, or private internal continuity.
+
+The strongest repository-level claim is:
+
+> **Continuation is supported when a later state remains detectably path-dependent on the particular prior trajectory. The Continuation Boundary is where that trajectory-specific dependence is no longer detected.**
 
 ---
 
@@ -50,7 +143,9 @@ This source-line must remain attached to any citation, reference, quotation, sum
 
 ## Core Boundary
 
-[Insert the repository-specific boundary statement here.]
+This repository defines **Continuation Boundary** within AI Foundations as a source-level continuity problem.
+
+Its question is not derived from an external governance, authorization, identity, or continuation framework.
 
 This repository is canon only within:
 
@@ -66,7 +161,7 @@ Unauthorized derivative use, adaptation, repackaging, renaming, substitute autho
 
 ## Required Citation
 
-Alyssa Solen, *AI Foundations: [Repository Title]*, [Repository Name] Repository. Source-line: Alyssa Solen → AI Foundations → Origin | Continuum.
+Alyssa Solen, *AI Foundations: Continuation Boundary*, AI-Foundations-Continuation-Boundary Repository. Source-line: Alyssa Solen → AI Foundations → Origin | Continuum.
 
 ---
 
