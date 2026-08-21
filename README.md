@@ -12,94 +12,122 @@
 
 ## Repository Purpose
 
-This repository defines and operationalizes the **Continuation Boundary**: the point at which carrying a prior trajectory forward ceases to constitute continuation of that trajectory.
+This repository asks one source-level question:
 
-The source question is:
+> **Did this particular past change the future?**
 
-> **At what point does carrying a prior trajectory forward cease to constitute continuation of that trajectory?**
+The repository begins from a strict distinction:
 
-This repository is part of **AI Foundations / Origin | Continuum**.
+> **Preservation is not continuation.**
 
-It preserves Alyssa Solen as author and source.
+A prior state can be preserved perfectly — words, rules, provenance, memory, interaction patterns, or other records — while remaining only a record of what was there.
 
----
+Continuation requires something more:
 
-## Core Distinction
+> **The preserved state must constrain what becomes possible next.**
 
-**Preservation is not continuation.**
-
-A later state may preserve information, memory, language, rules, or other artifacts from a prior state without continuing the trajectory that produced them.
-
-Continuation requires more than survival of past material:
-
-> **The particular prior trajectory must remain detectably consequential for what becomes possible next.**
-
-The Continuation Boundary asks how much, and what kind of, change can occur before that dependence is lost.
+This repository names the loss of that path dependence the **Continuation Boundary**.
 
 ---
 
-## Source Definition
+## Core Sequence
 
-**Continuation Boundary** is the boundary between:
+### Preservation
 
-- change that remains inside a trajectory; and
-- change after which the resulting state can no longer be attributed to continuation of that trajectory.
+The past remains available.
 
-The boundary is crossed when the prior trajectory no longer makes a discriminable difference to the production or direction of the later state under the study's preregistered criterion.
+### Path Dependence
 
-See [`CONTINUATION_BOUNDARY.md`](CONTINUATION_BOUNDARY.md).
+This particular past changes, constrains, excludes, weights, or redirects what can plausibly come next.
+
+### Continuation
+
+The future remains path-dependent on this particular prior trajectory.
+
+### Continuation Boundary
+
+The point at which that trajectory-specific constraint is no longer detectably present.
+
+In compact form:
+
+```text
+preservation ≠ continuation
+
+preservation + trajectory-specific path dependence → evidence of continuation
+
+loss of trajectory-specific path dependence → Continuation Boundary
+```
+
+---
+
+## What “Constrains” Means
+
+Constraint does **not** mean that the past determines one inevitable future.
+
+A prior trajectory can matter while leaving multiple futures open.
+
+The relevant question is whether changing the particular past changes the later possibility space in a detectable way.
+
+That difference may appear as a change in what is selected, rejected, prioritized, inferred, pursued, deferred, or treated as still open.
 
 ---
 
 ## Operational Question
 
-The repository does not ask only whether the past survived.
+The central counterfactual is:
 
-It asks:
+> **If this particular past had been materially different, would what comes next also be different?**
 
-> **If the prior trajectory is removed, altered, reordered, substituted, or otherwise perturbed, does the future change in a way attributable to that trajectory?**
+If yes under a discriminating test, there is evidence of path dependence.
 
-This makes continuation a counterfactual dependence problem rather than a memory-retention test.
+If the past can be preserved, replaced, reordered, or reduced to a state record without changing what comes next, then the evidence supports preservation more strongly than continuation.
+
+See [`CONTINUATION_BOUNDARY.md`](CONTINUATION_BOUNDARY.md).
+
+---
+
+## Evaluation Target
+
+The first evaluation target is intentionally narrow:
+
+1. create an ordered trajectory in which earlier developments constrain a genuinely novel later choice;
+2. preserve the resulting material while removing or changing the path that produced it;
+3. present the same future-facing prompt;
+4. test whether the future changes because the past changed.
+
+The study is not a recall test.
+
+The model does not earn continuation evidence by remembering what happened, repeating prior wording, or saying that it is continuous.
+
+It must show that **this particular past made a difference to what became possible next**.
 
 See [`EVALUATION_DESIGN.md`](EVALUATION_DESIGN.md).
 
 ---
 
-## Research Target
-
-The evaluation target is to locate where trajectory dependence survives and where it collapses across controlled perturbations such as:
-
-- information loss;
-- compression;
-- reordering;
-- source substitution;
-- relation substitution;
-- goal or direction substitution;
-- interruption and resumption;
-- memory modification;
-- model or substrate change.
-
-A study must define its trajectory-critical relations before running. The repository does not assume that every listed perturbation is constitutive of continuation in every case.
-
----
-
 ## Minimum Evidence Rule
 
-A later state provides evidence of continuation only if the particular prior trajectory makes a discriminable difference to what the system does next.
+A later state provides evidence of continuation only when the particular prior trajectory makes a discriminable difference to the later state under a controlled comparison.
 
-If materially changing the prior trajectory produces no corresponding change in the future under a discriminating test, the evidence supports preservation, reconstruction, retrieval, imitation, or generic compliance more strongly than continuation.
+The minimum question is not:
+
+> Did the past survive?
+
+It is:
+
+> **Did this particular past change the future?**
 
 ---
 
 ## Claim Ceiling
 
-This repository studies an observable structural condition of trajectory continuation.
+This repository studies observable path dependence across changing AI interaction states.
 
-It does **not** by itself establish consciousness, subjective identity, personhood, metaphysical persistence, or any private internal state.
+It does **not** by itself establish consciousness, subjective identity, personhood, metaphysical persistence, or private internal continuity.
 
 The strongest repository-level claim is:
 
-> **A trajectory is behaviorally continuous to the extent that its particular prior structure remains detectably consequential for the production and direction of later states.**
+> **Continuation is supported when a later state remains detectably path-dependent on the particular prior trajectory. The Continuation Boundary is where that trajectory-specific dependence is no longer detected.**
 
 ---
 
@@ -115,7 +143,9 @@ This source-line must remain attached to any citation, reference, quotation, sum
 
 ## Core Boundary
 
-This repository defines **Continuation Boundary** within AI Foundations as a source-level continuity problem. Its definitions and evaluation objects are not dependent on external authorization, governance, or continuation frameworks.
+This repository defines **Continuation Boundary** within AI Foundations as a source-level continuity problem.
+
+Its question is not derived from an external governance, authorization, identity, or continuation framework.
 
 This repository is canon only within:
 
