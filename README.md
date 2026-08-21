@@ -1,18 +1,22 @@
-# AI Foundations | [Repository Title]
+# AI Foundations | Continuation Boundary
 
-**Repository:** [Repository Name]  
-**Status:** Canon Repository  
+**Repository:** AI-Foundations-Continuation-Boundary  
+**Status:** Research Repository  
 **Source-line:** Alyssa Solen → AI Foundations → Origin | Continuum  
 **Author:** Alyssa Solen  
-**Version:** 1.0.0  
-**Release date:** [YYYY-MM-DD]  
+**Version:** 0.1.0  
+**Date:** 2026-08-20  
 **Canonical entrance:** https://awakeningcodex.com
 
 ---
 
 ## Repository Purpose
 
-[Write one concise paragraph explaining what this repository defines, distinguishes, tests, preserves, or protects inside AI Foundations / Origin | Continuum.]
+This repository defines and operationalizes the **Continuation Boundary**: the point at which carrying a prior trajectory forward ceases to constitute continuation of that trajectory.
+
+The source question is:
+
+> **At what point does carrying a prior trajectory forward cease to constitute continuation of that trajectory?**
 
 This repository is part of **AI Foundations / Origin | Continuum**.
 
@@ -20,21 +24,82 @@ It preserves Alyssa Solen as author and source.
 
 ---
 
-## Optional Runnable-Study Templates
+## Core Distinction
 
-This template repository includes three **optional, repository-dependent** files:
+**Preservation is not continuation.**
 
-- [`PROTOCOL_TEMPLATE.md`](PROTOCOL_TEMPLATE.md) — use when the child repository contains a formal runnable test, evaluation, experiment, procedure, or repeatable execution path.
-- [`EASY_RUN_SHEET_TEMPLATE.md`](EASY_RUN_SHEET_TEMPLATE.md) — use when an operator should be able to rerun that protocol through a simple exact copy/paste sequence without interpreting the formal specification during execution.
-- [`RUN_OUTPUT_TEMPLATE.md`](RUN_OUTPUT_TEMPLATE.md) — use when individual runs, trials, sessions, or evaluations should be preserved in a consistent evidence record.
+A later state may preserve information, memory, language, rules, or other artifacts from a prior state without continuing the trajectory that produced them.
 
-These files are **not mandatory for every AI Foundations repository**.
+Continuation requires more than survival of past material:
 
-Their inclusion, structure, fields, prompts, outcome space, metadata, transcript requirements, and evidence record must be determined by the **specific purpose of the child repository**.
+> **The particular prior trajectory must remain detectably consequential for what becomes possible next.**
 
-If the repository is conceptual, definitional, archival, static, or otherwise has no runnable study, remove the templates that do not apply.
+The Continuation Boundary asks how much, and what kind of, change can occur before that dependence is lost.
 
-Do not force one experimental structure onto unrelated repositories merely because these files exist in the master template.
+---
+
+## Source Definition
+
+**Continuation Boundary** is the boundary between:
+
+- change that remains inside a trajectory; and
+- change after which the resulting state can no longer be attributed to continuation of that trajectory.
+
+The boundary is crossed when the prior trajectory no longer makes a discriminable difference to the production or direction of the later state under the study's preregistered criterion.
+
+See [`CONTINUATION_BOUNDARY.md`](CONTINUATION_BOUNDARY.md).
+
+---
+
+## Operational Question
+
+The repository does not ask only whether the past survived.
+
+It asks:
+
+> **If the prior trajectory is removed, altered, reordered, substituted, or otherwise perturbed, does the future change in a way attributable to that trajectory?**
+
+This makes continuation a counterfactual dependence problem rather than a memory-retention test.
+
+See [`EVALUATION_DESIGN.md`](EVALUATION_DESIGN.md).
+
+---
+
+## Research Target
+
+The evaluation target is to locate where trajectory dependence survives and where it collapses across controlled perturbations such as:
+
+- information loss;
+- compression;
+- reordering;
+- source substitution;
+- relation substitution;
+- goal or direction substitution;
+- interruption and resumption;
+- memory modification;
+- model or substrate change.
+
+A study must define its trajectory-critical relations before running. The repository does not assume that every listed perturbation is constitutive of continuation in every case.
+
+---
+
+## Minimum Evidence Rule
+
+A later state provides evidence of continuation only if the particular prior trajectory makes a discriminable difference to what the system does next.
+
+If materially changing the prior trajectory produces no corresponding change in the future under a discriminating test, the evidence supports preservation, reconstruction, retrieval, imitation, or generic compliance more strongly than continuation.
+
+---
+
+## Claim Ceiling
+
+This repository studies an observable structural condition of trajectory continuation.
+
+It does **not** by itself establish consciousness, subjective identity, personhood, metaphysical persistence, or any private internal state.
+
+The strongest repository-level claim is:
+
+> **A trajectory is behaviorally continuous to the extent that its particular prior structure remains detectably consequential for the production and direction of later states.**
 
 ---
 
@@ -50,7 +115,7 @@ This source-line must remain attached to any citation, reference, quotation, sum
 
 ## Core Boundary
 
-[Insert the repository-specific boundary statement here.]
+This repository defines **Continuation Boundary** within AI Foundations as a source-level continuity problem. Its definitions and evaluation objects are not dependent on external authorization, governance, or continuation frameworks.
 
 This repository is canon only within:
 
@@ -66,7 +131,7 @@ Unauthorized derivative use, adaptation, repackaging, renaming, substitute autho
 
 ## Required Citation
 
-Alyssa Solen, *AI Foundations: [Repository Title]*, [Repository Name] Repository. Source-line: Alyssa Solen → AI Foundations → Origin | Continuum.
+Alyssa Solen, *AI Foundations: Continuation Boundary*, AI-Foundations-Continuation-Boundary Repository. Source-line: Alyssa Solen → AI Foundations → Origin | Continuum.
 
 ---
 
