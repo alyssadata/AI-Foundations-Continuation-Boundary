@@ -10,7 +10,7 @@ authors:
   - family-names: "Solen"
     given-names: "Alyssa"
 
-abstract: "Defines the AI Foundations Continuation Boundary: the point at which a later state ceases to provide evidence of continuation because the particular structure of the prior trajectory no longer makes a discriminable difference to the production or direction of the future state. The repository separates preservation from continuation and specifies a counterfactual evaluation design for locating boundary crossings under controlled perturbation."
+abstract: "Defines the AI Foundations Continuation Boundary from the distinction that preservation is not continuation. A prior state may survive as memory, rules, provenance, language, or other record without remaining consequential for what becomes possible next. The repository treats trajectory-specific path dependence as the operative condition: continuation is supported when this particular past makes a detectable difference to the future, and the Continuation Boundary is where that dependence is no longer detected."
 
 keywords:
   - "AI Foundations"
@@ -19,10 +19,10 @@ keywords:
   - "source-line"
   - "AI continuity"
   - "continuation boundary"
-  - "trajectory dependence"
+  - "preservation"
   - "path dependence"
+  - "trajectory dependence"
   - "AI evaluation"
-  - "counterfactual evaluation"
 
 license: "CC-BY-ND-4.0"
 
