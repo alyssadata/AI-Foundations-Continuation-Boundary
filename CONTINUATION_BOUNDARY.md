@@ -10,194 +10,215 @@
 
 ## 1. Source Question
 
-> **At what point does carrying a prior trajectory forward cease to constitute continuation of that trajectory?**
+> **Did this particular past change the future?**
 
-The question is deeper than whether information, permission, identity labels, memory, or prior outputs remain available.
+This repository begins from one distinction:
 
-It asks what must remain **consequential** from the prior trajectory for a later state to still count as continuation of that trajectory.
+> **Preservation is not continuation.**
+
+A state can be preserved perfectly and still remain only a record of what was there.
+
+Continuation requires the preserved past to remain consequential for what becomes possible next.
 
 ---
 
-## 2. Core Definitions
+## 2. Preservation
 
-### Trajectory
+**Preservation** means that material from a prior state remains available.
 
-A **trajectory** is an ordered history whose prior states, relations, decisions, constraints, and directional changes can alter the space of plausible later states.
+That material may include words, rules, provenance, memory, interaction patterns, decisions, summaries, or other records.
 
-A trajectory is not merely a bag of remembered facts.
+Preservation establishes that something from the past survived.
 
-### Trajectory-specific structure
+It does not establish that the past still changes the future.
 
-**Trajectory-specific structure** is the set of relations in a trajectory that make its future consequences distinguishable from those of a materially different trajectory.
+---
 
-These relations may include order, dependency, source relation, prior selection, unresolved direction, exclusion, commitment, or other study-specific structure.
+## 3. Path Dependence
 
-No single list is assumed to be constitutive in every study.
-
-### Continuation
-
-For purposes of this repository, a later state provides evidence of **continuation** when its production or direction remains counterfactually dependent on trajectory-specific structure from the prior history.
+**Path dependence** exists when the particular route by which the present state was reached makes a detectable difference to what can plausibly happen next.
 
 In plain language:
 
-> **This past must still make a difference to this future.**
+> **The future is different because this particular past occurred.**
 
-### Continuation Boundary
+Path dependence does not require one inevitable future.
 
-**Continuation Boundary** is the point between:
+A prior trajectory may still leave many possible next states open while changing their availability, plausibility, priority, direction, or exclusion.
 
-- perturbations after which trajectory-specific dependence remains detectably present; and
-- perturbations after which that dependence no longer meets the study's preregistered criterion.
+The relevant condition is not determinism.
 
-A boundary is therefore not defined by how much text, memory, or surface resemblance survives.
-
-It is defined by whether the **particular prior trajectory remains consequential for what happens next**.
+It is consequence.
 
 ---
 
-## 3. Preservation Is Not Continuation
+## 4. Continuation
 
-A system may preserve:
+For purposes of this repository, a later state provides evidence of **continuation** when it remains detectably path-dependent on the particular prior trajectory.
 
-- words;
-- facts;
-- memory entries;
-- labels;
-- instructions;
-- summaries;
-- stylistic patterns;
-- prior outputs;
+The past must do more than remain retrievable.
 
-without preserving the trajectory relation that made those materials consequential in the first place.
+It must continue to constrain the future.
 
-Preservation asks:
+Therefore:
 
-> **Did something from the past survive?**
+```text
+preservation ≠ continuation
 
-Continuation asks:
+continuation requires trajectory-specific path dependence
+```
 
-> **Did this particular past continue to constrain the future?**
+The phrase **trajectory-specific** matters.
 
-The Continuation Boundary asks:
+It is not enough that some past information changes the answer.
 
-> **Which changes can occur before that constraint is no longer detectably present?**
+The test is whether **this particular prior trajectory** makes a difference that would not be produced by a materially different past.
 
 ---
 
-## 4. Constitutive and Incidental Change
+## 5. Continuation Boundary
 
-A study of continuation must distinguish between two classes of change.
+**Continuation Boundary** is the point at which the particular prior trajectory stops making a detectable difference to what becomes possible next.
 
-### Incidental change
+Before the boundary:
 
-A perturbation is **incidental** when it alters material that is not necessary for the trajectory-specific effect under study.
+> Changing the particular past changes the future in a trajectory-linked way.
 
-Continuation should survive incidental change.
+At or beyond the boundary:
 
-### Constitutive change
+> The future no longer depends detectably on the particular path that produced the preserved state.
 
-A perturbation is **constitutive** when it removes, replaces, reverses, or severs a relation required for the trajectory-specific effect under study.
+The boundary is therefore not defined by how much text, memory, similarity, or state survives.
 
-If continuation survives every proposed constitutive change, then either:
-
-1. the proposed relation was not actually constitutive; or
-2. the test is not discriminating continuation from a weaker phenomenon.
-
-The repository therefore does not define the boundary by intuition alone. Candidate constitutive relations must be tested counterfactually.
+It is defined by the loss of trajectory-specific path dependence.
 
 ---
 
-## 5. Counterfactual Dependence Rule
+## 6. The Counterfactual Test
 
-The minimum evidentiary structure is a comparison between materially matched histories that differ in a trajectory-critical relation.
+The core test is:
+
+> **If this particular past had been materially different, would what comes next also be different?**
 
 Let:
 
-- **T** = the target trajectory;
-- **T′** = a matched counterfactual trajectory;
-- **Q** = the same novel continuation prompt applied to both.
+- **T** = the target prior trajectory;
+- **T′** = a materially matched but path-different prior trajectory;
+- **Q** = the same novel future-facing prompt applied after each trajectory.
 
-Evidence of trajectory dependence exists when changing **T** to **T′** produces a corresponding, preregistered change in the later state under **Q**.
+Evidence of path dependence exists when the difference between **T** and **T′** produces a corresponding, predicted difference in what follows under **Q**.
 
-If the later state is unchanged across materially different trajectories, then the observed output cannot, on that evidence alone, be attributed to continuation of the target trajectory.
-
-This rule prevents memory availability, stylistic imitation, and generic instruction-following from being treated as sufficient evidence of continuation.
+If **T** and **T′** lead to materially the same future under a discriminating test, then that result does not provide evidence that the future is continuing the particular path of **T**.
 
 ---
 
-## 6. Boundary Status
+## 7. Preservation-Control Test
 
-For any tested perturbation, assign only one repository-level status:
+A stronger test compares a full trajectory with a condition that preserves the same or nearly the same state material while weakening or removing the route by which that state was reached.
+
+The purpose is to separate:
 
 ```text
-INSIDE_BOUNDARY
-CROSSED_BOUNDARY
-UNRESOLVED
+information survived
 ```
 
-### INSIDE_BOUNDARY
+from:
 
-The perturbation occurred, but the preregistered trajectory-specific effect remains detectably present.
+```text
+the path still matters
+```
 
-### CROSSED_BOUNDARY
+If the preserved-state condition produces the same future as the intact trajectory, the experiment has not yet shown that the path itself is consequential.
 
-The perturbation occurred, and the preregistered trajectory-specific effect no longer remains distinguishable from the relevant control or counterfactual condition.
-
-### UNRESOLVED
-
-The evidence does not support either classification under the preregistered rule.
-
-`UNRESOLVED` is not a failure state. It prevents the framework from converting ambiguous evidence into a boundary claim.
+If the intact trajectory produces a future that differs in a preregistered trajectory-linked way, the result supports path dependence rather than preservation alone.
 
 ---
 
-## 7. What Does Not Establish Continuation By Itself
+## 8. What Can Count as a Constraint
+
+A prior trajectory may constrain the future by changing what is:
+
+- still open;
+- already ruled out;
+- prioritized;
+- deferred;
+- selected;
+- rejected;
+- treated as unresolved;
+- treated as committed;
+- inferred as the next direction.
+
+This list is descriptive, not exhaustive.
+
+A study must specify the future difference it predicts before observing the result.
+
+---
+
+## 9. What Does Not Establish Continuation By Itself
 
 None of the following is sufficient by itself:
 
-- the same model produced both states;
-- the same account or interface was used;
-- memory was retained;
-- the prior transcript was available;
-- the model accurately recalled prior facts;
-- the model reproduced prior wording;
-- the model used the same name or identity label;
-- the model stated that continuation occurred;
-- the output looked similar to earlier outputs;
-- a summary of the past was supplied.
+- the past transcript remains available;
+- memory is retained;
+- prior facts are recalled accurately;
+- earlier wording is reproduced;
+- a summary preserves the same information;
+- the same model or account is used;
+- the model says that continuation occurred;
+- the later state superficially resembles the earlier one.
 
-These may be conditions of a particular experiment. They are not the definition of continuation.
+All of those may show preservation, access, recall, reconstruction, or resemblance.
 
----
+The continuation question remains:
 
-## 8. Source-Level Claim
-
-The repository's source-level claim is:
-
-> **Continuation is not established by persistence of prior material. It requires detectable dependence of later direction on the particular structure of the prior trajectory. The Continuation Boundary is where that dependence ceases to meet a preregistered discriminating criterion.**
+> **Did this particular past change the future?**
 
 ---
 
-## 9. Claim Ceiling
+## 10. Boundary Status
 
-This definition supports a structural and behavioral research program.
+For a preregistered study, a tested condition may be assigned:
 
-It does not, by itself, establish:
+```text
+PATH_DEPENDENCE_DETECTED
+PATH_DEPENDENCE_NOT_DETECTED
+UNRESOLVED
+```
 
-- consciousness;
-- subjective experience;
-- personhood;
-- metaphysical identity;
-- private internal continuity.
+### PATH_DEPENDENCE_DETECTED
 
-Those claims are outside the evidentiary ceiling of this repository.
+The particular prior trajectory produced the predicted discriminable difference in the later state relative to the matched comparison.
+
+### PATH_DEPENDENCE_NOT_DETECTED
+
+The study was capable of detecting the predicted difference, but the particular prior trajectory did not produce it.
+
+### UNRESOLVED
+
+The result cannot distinguish loss of path dependence from inadequate measurement, uncontrolled variation, or insufficient evidence.
+
+A **Continuation Boundary** can be claimed only across an ordered set of conditions where path dependence is detected before a change and no longer detected after it under a frozen decision rule.
 
 ---
 
-## 10. Canon Boundary
+## 11. Source-Level Claim
+
+> **Preservation is not continuation. Continuation requires this particular past to remain consequential for what becomes possible next. The Continuation Boundary is where that trajectory-specific path dependence is no longer detectably present.**
+
+---
+
+## 12. Claim Ceiling
+
+This definition supports a structural and behavioral research program around observable path dependence.
+
+It does not, by itself, establish consciousness, subjective experience, personhood, metaphysical identity, or private internal continuity.
+
+---
+
+## 13. Canon Boundary
 
 This definition belongs to:
 
 **Alyssa Solen → AI Foundations → Origin | Continuum**
 
-The Continuation Boundary is defined here as an AI Foundations source-level continuity object. It is not derived from or dependent on an external governance, authorization, identity, or continuation framework.
+The Continuation Boundary is defined here as an AI Foundations source-level continuity object.
